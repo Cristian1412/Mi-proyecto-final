@@ -1,8 +1,8 @@
-def crear_servicio(datos_servicios):
+def generar_servicio(datos_servicios):
     servicio={}
     servicio["id"]=input("Ingrese el ID del servicio: ")
     servicio["nombre"]=input("Ingrese el nombre: ")
-    servicio["caracteristicas"]=input("Ingrese las caracteristicas: ")
+    servicio["caracteristicas"]=input("Ingrese las características: ")
     try:
         servicio["precio"] = int(input("Ingrese el precio: "))
     except Exception:
@@ -13,11 +13,11 @@ def crear_servicio(datos_servicios):
     print(datos_servicios)
     return datos_servicios
 
-def crear_producto(datos_servicios):
+def generar_producto(datos_servicios):
     producto={}
     producto["id"]=input("Ingrese id del producto: ")
     producto["nombre"]=input("Ingrese el nombre: ")
-    producto["caracteristicas"]=input("Ingrese las caracteristicas: ")
+    producto["caracteristicas"]=input("Ingrese las características: ")
     try:
         producto["precio"] = int(input("Ingrese el precio: "))
     except Exception:
@@ -28,7 +28,7 @@ def crear_producto(datos_servicios):
     print(datos_servicios)
     return datos_servicios
     
-def catalogo_servicios(datos_servicios):
+def listar_servicios(datos_servicios):
     for i in datos_servicios["servicios"]:
         for llave,valor in i.items():
             print(llave,"=", valor)
@@ -41,7 +41,7 @@ def actualizar_servicio(datos_servicios):
             servicio={}
             servicio["id"]=input("Ingrese id del servicio: ")
             servicio["nombre"]=input("Ingrese el nombre: ")
-            servicio["caracteristicas"]=input("Ingrese las caracteristicas: ")
+            servicio["caracteristicas"]=input("Ingrese las características: ")
             try:
                 servicio["precio"] = int(input("Ingrese el precio: "))
             except Exception:
@@ -57,7 +57,7 @@ def actualizar_producto(datos_servicios):
         producto={}
         producto["id"]=input("Ingrese id del producto: ")
         producto["nombre"]=input("Ingrese el nombre: ")
-        producto["caracteristicas"]=input("Ingrese las caracteristicas: ")
+        producto["caracteristicas"]=input("Ingrese las características: ")
         try:
             producto["precio"] = int(input("Ingrese el precio: "))
         except Exception:
@@ -83,14 +83,15 @@ def eliminar_producto(datos_servicios):
                 print("Eliminado")
     return datos_servicios
 
-def cant_serv(datos_servicios:dict):
+def cantidad_servicios(datos_servicios:dict):
     
     for i in range(len(datos_servicios["servicios"])):
         result = i+1
         print(result,"servicios")
 
-def cant_product(datos_servicios:dict):
+def cantidad_productos(datos_servicios:dict):
     
     for i in range(len(datos_servicios["productos"])):
         result = i+1
         print(result,"productos")
+

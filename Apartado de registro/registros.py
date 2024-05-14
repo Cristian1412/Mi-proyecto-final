@@ -7,7 +7,7 @@ def registrar_excepcion(excepcion):
   mensaje = f"{fecha_hora}: {excepcion.__class__.__name__} - {excepcion}"
 
   try:
-    with open("registros.txt", "a") as archivo:
+    with open("registro.txt", "a") as archivo:
       archivo.write(mensaje + "\n")
-  except Exception as e:
-    print(f"Error al registrar excepción: {e}")
+  except Exception as o:
+    print(f"Error no podemos registrar la excepción: {o}")
