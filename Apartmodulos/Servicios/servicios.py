@@ -83,13 +83,13 @@ def eliminar_producto(datos_servicios):
                 print("Eliminado")
     return datos_servicios
 
-def cantidad_servicios(datos_servicios:dict):
+def cant_servic(datos_servicios:dict):
     
     for i in range(len(datos_servicios["servicios"])):
         result = i+1
         print(result,"servicios")
 
-def cantidad_productos(datos_servicios:dict):
+def cant_product(datos_servicios:dict):
     
     for i in range(len(datos_servicios["productos"])):
         result = i+1

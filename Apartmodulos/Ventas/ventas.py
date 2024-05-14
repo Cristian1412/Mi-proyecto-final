@@ -1,7 +1,7 @@
-from Modulos.Administrativo.usuarios import *
-from Modulos.Ventas.datos import *
-from Modulos.Servicios.servicios import *
-from Modulos.Servicios.datos import *
+from Apartmodulos.Administrativo.usuarios import *
+from Apartmodulos.Ventas.datos import *
+from Apartmodulos.Servicios.servicios import *
+from Apartmodulos.Servicios.datos import *
 
 RUTA_CENTRAL = "Modulos/Administrativo/CRUD.json"
 RUTA_DE_VENTAS = "Modulos/Ventas/ventas.json"
